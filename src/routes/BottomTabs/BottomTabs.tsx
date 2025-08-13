@@ -3,6 +3,7 @@ import React from 'react';
 import { Chat, Home, Profile } from '../../screens';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { colors } from '../../utils/color';
+import { moderateScale } from 'react-native-size-matters';
 
 export type BottomTabParamList = {
   Chat: undefined;
@@ -15,7 +16,7 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 const homeIcon = 'home-outline';
 const chatIcon = 'chatbubble-outline';
 const profileIcon = 'person-outline';
-const ICON_SIZE = 15;
+const ICON_SIZE = moderateScale(15);
 
 const getTabIcon = (routeName: string, color: string) => {
   switch (routeName) {

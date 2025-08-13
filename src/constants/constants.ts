@@ -50,3 +50,23 @@ export const chatData: Chat[] = [
     img: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
+
+type UserInfoItem = {
+  title: string;
+  subTitle: string;
+};
+
+export const userInfo: UserInfoItem[] = [
+  { title: 'Full Name:', subTitle: 'Johnathan Doe' },
+  { title: 'Email:', subTitle: 'johndoe@example.com' },
+  { title: 'Address:', subTitle: '123 Main Street, City, Country' },
+  { title: 'Phone:', subTitle: '+1 234 567 890' },
+];
+
+export const menuItems = [
+  { title: 'Profile', icon: 'profile' },
+  { title: 'Settings', icon: 'setting' },
+  { title: 'Change password', icon: 'lock' },
+  { title: 'Refer friends', icon: 'gift' },
+  { title: 'Verification', icon: 'verification' },
+];

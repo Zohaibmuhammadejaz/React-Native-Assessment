@@ -36,7 +36,7 @@ const fetchProducts = async (): Promise<Product[]> => {
     return data;
   } catch (error) {
     console.error('Error fetching products:', error);
-    throw new Error('Failed to fetch products');
+    return [];
   }
 };
 
